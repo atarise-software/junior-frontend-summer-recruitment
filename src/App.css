@@ -1,0 +1,60 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 600px;
+}
+
+h1 {
+  color: white;
+
+  font-size: 3rem;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  width: 33.33%;
+  height: 50%;
+  border: 1px solid black;
+
+  object-fit: cover;
+}
+
+[data-loading] {
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  margin: 2rem auto;
+}
+
+[data-loading]::after {
+  content: '';
+  display: block;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 0.5rem;
+
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+
+  animation: ring 1.2s linear infinite;
+}
+
+[data-loading='false'] {
+  visibility: hidden;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

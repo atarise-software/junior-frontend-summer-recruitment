@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-1. Create `.env.local` file and add environment variables. (see: [Environment variables]('#environment-variables')). You can simply copy `.env.example`:
+1. Create `.env.local` file and add environment variables. (see: [Environment variables](#environment-variables)). You can simply copy `.env.example`:
 
     ```bash
     cp .env.example .env.local
